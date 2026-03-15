@@ -14,7 +14,6 @@ void main() async {
 
   // Initialize Supabase
   await Supabase.initialize(
-    await Supabase.initialize(
   url: const String.fromEnvironment('SUPABASE_URL'),
   anonKey: const String.fromEnvironment('SUPABASE_ANON_KEY'),
   );
