@@ -14,8 +14,9 @@ void main() async {
 
   // Initialize Supabase
   await Supabase.initialize(
-    url: const String.fromEnvironment('https://jcdcosskgdhjjvqevfxq.supabase.co', defaultValue: 'https://jcdcosskgdhjjvqevfxq.supabase.co'),
-    anonKey: const String.fromEnvironment('sb_publishable_EA7nerPfaQEzbbu-GIaaKQ_b2soEfLS', defaultValue: 'sb_publishable_EA7nerPfaQEzbbu-GIaaKQ_b2soEfLS'),
+    await Supabase.initialize(
+  url: const String.fromEnvironment('SUPABASE_URL'),
+  anonKey: const String.fromEnvironment('SUPABASE_ANON_KEY'),
   );
 
   // Status bar style
