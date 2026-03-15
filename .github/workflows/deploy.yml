@@ -19,15 +19,7 @@ jobs:
           flutter-version: '3.41.4'
           channel: 'stable'
 
-      - name: Create env.dart
-        run: |
-          mkdir -p lib
-          cat > lib/env.dart << 'EOF'
-          class Env {
-            static const supabaseUrl = '${{ secrets.SUPABASE_URL }}';
-            static const supabaseAnonKey = '${{ secrets.SUPABASE_ANON_KEY }}';
-          }
-          EOF
+      
 
       - name: Install dependencies
         run: flutter pub get
